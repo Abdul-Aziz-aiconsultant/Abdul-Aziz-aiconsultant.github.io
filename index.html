@@ -1,92 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-
-  <meta charset="UTF-8">
-  <title>AbDul Aziz – AI/ML Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Aziz – AI/ML Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 750px;
-      margin: auto;
-      padding: 20px;
-      background-color: #f9f9f9;
-      color: #333;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      line-height: 1.6;
     }
     header {
+      padding: 2rem;
       text-align: center;
-      margin-bottom: 40px;
+      background: rgba(0,0,0,0.5);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
-    h1 {
-      color: #2c3e50;
-      font-size: 2.5em;
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 700;
     }
-    a {
-      color: #007acc;
-      text-decoration: none;
+    header p {
+      margin: 0.5rem 0 0;
+      font-weight: 400;
+      color: #ccc;
     }
     section {
-      margin-bottom: 30px;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: rgba(255,255,255,0.05);
+      border-radius: 10px;
+    }
+    h2 {
+      color: #00d8ff;
+      border-bottom: 2px solid #00d8ff;
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background-color: rgba(0,0,0,0.2);
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    a {
+      color: #00d8ff;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #ccc;
+    }
+    @media screen and (max-width: 768px) {
+      section {
+        padding: 1rem;
+      }
     }
   </style>
-  <link rel="stylesheet" href="style.css">
-
 </head>
-<p style="text-align: center;">
-  <a href="cv.pdf" download style="
-     background-color: #007acc;
-     color: white;
-     padding: 10px 20px;
-     text-decoration: none;
-     border-radius: 5px;
-     font-weight: bold;">
-     📄 Download My CV
-  </a>
-</p>
-
-  
 <body>
   <header>
-    <h1>Your Full Name</h1>
-    <p>AI/ML Engineer • Researcher • Open Source Enthusiast</p>
+    <h1>Abdul Aziz</h1>
+    <p>AI/ML Engineer | Researcher | BSIT Graduate</p>
+    <p><a href="mailto:your.email@example.com">your.email@example.com</a> | <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
   </header>
 
   <section>
     <h2>About Me</h2>
-    <p>I’m an AI/ML enthusiast with 3+ years of experience in applied machine learning. My interests include computer vision, NLP, and building real-world AI systems. I have published research papers on SSRN and actively write about my work.</p>
+    <p>I am a passionate AI/ML engineer with 3+ years of experience building intelligent systems in computer vision, NLP, and automation. I’m currently preparing for a fully funded Master’s abroad and documenting my journey with projects, blogs, and research contributions.</p>
   </section>
 
   <section>
     <h2>Projects</h2>
     <ul>
-      <li><a href="https://github.com/yourusername/project1">Face Recognition System</a></li>
-      <li><a href="https://github.com/yourusername/project2">BERT-Based Text Summarizer</a></li>
+      <li><strong>AI Chatbot</strong> – Built using Python, spaCy, and Flask. <a href="#">GitHub</a></li>
+      <li><strong>Food Image Classifier</strong> – Deep CNN model using TensorFlow and Keras. <a href="#">GitHub</a></li>
+      <li><strong>Resume Parser</strong> – NLP project using FastAPI, spaCy, regex. <a href="#">GitHub</a></li>
     </ul>
   </section>
 
   <section>
-    <h2>Blog Posts</h2>
+    <h2>Certifications</h2>
     <ul>
-      <li><a href="https://medium.com/@yourhandle/transformers-explained">Understanding Transformers</a></li>
-      <li><a href="https://linkedin.com/posts/...">Deploying AI on Hugging Face</a></li>
+      <li>Machine Learning – Andrew Ng (Coursera)</li>
+      <li>Deep Learning Specialization – Coursera</li>
+      <li>AI Engineering – IBM Professional Certificate</li>
     </ul>
   </section>
 
   <section>
-    <h2>Publications</h2>
+    <h2>Publications & Research</h2>
     <ul>
-      <li><a href="https://ssrn.com/abstract=yourid">SSRN: AI for Legal Text Mining</a></li>
-      <li><a href="https://ssrn.com/abstract=yourid2">SSRN: Deep Learning Case Study</a></li>
+      <li>"AI for Urdu Text Classification" – Preprint on arXiv</li>
+      <li>"NLP Tools for Small Businesses" – Medium article</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Resume</h2>
+    <p><a href="resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
   </section>
 
   <section>
     <h2>Contact</h2>
-    <p>Email: your.email@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername">yourusername</a></p>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Abdul Aziz | AI Portfolio</p>
+  </footer>
 </body>
 </html>
