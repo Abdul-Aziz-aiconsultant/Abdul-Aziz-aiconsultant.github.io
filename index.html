@@ -76,17 +76,27 @@
       color: #bbb;
       font-size: 0.9rem;
     }
-    /* Responsive fixes */
+    .cv-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .cv-buttons a {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      text-align: center;
+      flex: 1 1 45%;
+      max-width: 200px;
+    }
+    .cv-buttons a:nth-child(2) {
+      background-color: #28a745;
+    }
     @media screen and (max-width: 768px) {
-      body {
-        font-size: 16px;
-      }
-      header {
-        padding: 1.5rem 1rem;
-      }
-      header img {
-        width: 100px;
-        height: 100px;
+      section {
+        padding: 1rem;
       }
       header h1 {
         font-size: 2rem;
@@ -96,7 +106,6 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-        margin-top: 1rem;
       }
       header a {
         display: inline-flex;
@@ -105,26 +114,22 @@
         padding: 6px 10px;
         background: rgba(255, 255, 255, 0.05);
         border-radius: 6px;
-        margin: 0 5px;
       }
-      section {
-        padding: 1rem;
+      .cv-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      .cv-buttons a {
+        width: 100%;
+        max-width: 100%;
       }
       section a {
         word-break: break-word;
-      }
-      section a[download] {
-        display: inline-block;
-        margin-top: 10px;
-        width: 100%;
-        text-align: center;
       }
     }
   </style>
 </head>
 <body>
-<!-- original content below remains unchanged -->
-
 <header>
   <img src="profile.jpg" alt="AbDul Aziz" style="
   width: 130px;
@@ -135,16 +140,18 @@
   margin-bottom: 1rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 ">
-
   <h1>AbDul Aziz</h1>
   <p>AI/ML Engineer | Freelancer | Researcher | Innovexa Labs – Founder(Beta Phase)</p>
   <hr style="width: 50%; border: 0; height: 1px; background: #00f2fe; opacity: 0.4; margin-bottom: 1rem;">
   <div>
-    <a href="mailto:abdulazizofficialwork@gmail.com" style="margin-right: 15px;"><i class="fas fa-envelope"></i> Email</a>
-    <a href="https://github.com/Abdul-Aziz-aiconsultant" target="_blank" style="margin-right: 15px;"><i class="fab fa-github"></i> GitHub</a>
-    <a href="https://www.linkedin.com/in/abdulaziz2966/" target="_blank" style="margin-right: 15px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="mailto:abdulazizofficialwork@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    <a href="https://github.com/Abdul-Aziz-aiconsultant" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://www.linkedin.com/in/abdulaziz2966/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
     <a href="https://wa.me/923036182866" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="https://www.instagram.com/aziz.aiconsultant" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
   </div>
+
+
 </header>
 
 <section>
