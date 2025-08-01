@@ -84,17 +84,44 @@
       justify-content: center;
     }
     .cv-buttons a {
-      padding: 10px 15px;
-      background-color: #007bff;
-      color: white;
+      padding: 10px 18px;
       border-radius: 5px;
       text-align: center;
-      flex: 1 1 200px;
-      max-width: 250px;
+      font-size: 0.9rem;
+      flex: 1 1 40%;
+      max-width: 180px;
+      color: white;
+      text-decoration: none;
     }
-    .cv-buttons a:nth-child(2) {
+    .cv-buttons a:first-child {
+      background-color: #007bff;
+    }
+    .cv-buttons a:last-child {
       background-color: #28a745;
     }
+    header div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    header div a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.95rem;
+      padding: 6px 12px;
+      background-color: rgba(255,255,255,0.08);
+      border-radius: 6px;
+      color: white;
+      text-decoration: none;
+    }
+    header div a:nth-child(1) { background-color: #2c5364; }
+    header div a:nth-child(2) { background-color: #1c1c1e; }
+    header div a:nth-child(3) { background-color: #0077b5; }
+    header div a:nth-child(4) { background-color: #25D366; }
+    header div a:nth-child(5) { background-color: #e1306c; }
+
     @media screen and (max-width: 768px) {
       section {
         padding: 1rem;
@@ -102,27 +129,15 @@
       header h1 {
         font-size: 2rem;
       }
-      header div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-      }
-      header a {
-        display: inline-flex;
-        align-items: center;
-        font-size: 0.95rem;
-        padding: 6px 10px;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 6px;
-      }
       .cv-buttons {
         flex-direction: column;
         align-items: center;
       }
       .cv-buttons a {
-        width: 100%;
-        max-width: 100%;
+        width: 85%;
+        max-width: 300px;
+        font-size: 0.85rem;
+        padding: 8px 10px;
       }
       section a {
         word-break: break-word;
@@ -149,9 +164,8 @@
     <a href="https://github.com/Abdul-Aziz-aiconsultant" target="_blank"><i class="fab fa-github"></i> GitHub</a>
     <a href="https://www.linkedin.com/in/abdulaziz2966/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
     <a href="https://wa.me/923036182866" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-    
+  </div>
 </header>
-
 
 
 
@@ -255,6 +269,7 @@
     <a href="cv_professional.pdf" download>💼 Professional CV</a>
   </div>
 </section>
+
 
 
 <section>
