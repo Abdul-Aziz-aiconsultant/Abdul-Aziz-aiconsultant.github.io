@@ -76,17 +76,54 @@
       color: #bbb;
       font-size: 0.9rem;
     }
+    /* Responsive fixes */
     @media screen and (max-width: 768px) {
-      section {
-        padding: 1rem;
+      body {
+        font-size: 16px;
+      }
+      header {
+        padding: 1.5rem 1rem;
+      }
+      header img {
+        width: 100px;
+        height: 100px;
       }
       header h1 {
         font-size: 2rem;
+      }
+      header div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 1rem;
+      }
+      header a {
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.95rem;
+        padding: 6px 10px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 6px;
+        margin: 0 5px;
+      }
+      section {
+        padding: 1rem;
+      }
+      section a {
+        word-break: break-word;
+      }
+      section a[download] {
+        display: inline-block;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
+<!-- original content below remains unchanged -->
 
 <header>
   <img src="profile.jpg" alt="AbDul Aziz" style="
@@ -226,3 +263,4 @@
 
 </body>
 </html>
+
